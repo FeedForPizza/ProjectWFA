@@ -35,12 +35,12 @@
             this.subjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specialtyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.subjectToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.gradeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,13 +104,6 @@
             this.gradeToolStripMenuItem.Text = "Grade";
             this.gradeToolStripMenuItem.Click += new System.EventHandler(this.gradeToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -134,18 +127,28 @@
             this.subjectToolStripMenuItem1.Name = "subjectToolStripMenuItem1";
             this.subjectToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.subjectToolStripMenuItem1.Text = "Subject";
+            this.subjectToolStripMenuItem1.Click += new System.EventHandler(this.subjectToolStripMenuItem1_Click);
             // 
             // studentToolStripMenuItem1
             // 
             this.studentToolStripMenuItem1.Name = "studentToolStripMenuItem1";
             this.studentToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.studentToolStripMenuItem1.Text = "Student";
+            this.studentToolStripMenuItem1.Click += new System.EventHandler(this.studentToolStripMenuItem1_Click);
             // 
             // gradeToolStripMenuItem1
             // 
             this.gradeToolStripMenuItem1.Name = "gradeToolStripMenuItem1";
             this.gradeToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.gradeToolStripMenuItem1.Text = "Grade";
+            this.gradeToolStripMenuItem1.Click += new System.EventHandler(this.gradeToolStripMenuItem1_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form1
             // 

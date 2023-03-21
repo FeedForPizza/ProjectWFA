@@ -41,10 +41,10 @@
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.labelAddress = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.numericUpDownFaculty = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSpecialty = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxSpecialty = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFaculty)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,29 +153,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "FacultyNum";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 82);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 20);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Specialty";
-            // 
             // numericUpDownFaculty
             // 
             this.numericUpDownFaculty.Location = new System.Drawing.Point(12, 52);
             this.numericUpDownFaculty.Name = "numericUpDownFaculty";
             this.numericUpDownFaculty.Size = new System.Drawing.Size(180, 27);
             this.numericUpDownFaculty.TabIndex = 14;
-            // 
-            // comboBoxSpecialty
-            // 
-            this.comboBoxSpecialty.FormattingEnabled = true;
-            this.comboBoxSpecialty.Location = new System.Drawing.Point(13, 105);
-            this.comboBoxSpecialty.Name = "comboBoxSpecialty";
-            this.comboBoxSpecialty.Size = new System.Drawing.Size(179, 28);
-            this.comboBoxSpecialty.TabIndex = 15;
             // 
             // buttonSave
             // 
@@ -186,6 +169,23 @@
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 82);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 20);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Specialty";
+            // 
+            // comboBoxSpecialty
+            // 
+            this.comboBoxSpecialty.FormattingEnabled = true;
+            this.comboBoxSpecialty.Location = new System.Drawing.Point(13, 105);
+            this.comboBoxSpecialty.Name = "comboBoxSpecialty";
+            this.comboBoxSpecialty.Size = new System.Drawing.Size(179, 28);
+            this.comboBoxSpecialty.TabIndex = 15;
             // 
             // FormStudent
             // 
@@ -233,9 +233,9 @@
         private System.Windows.Forms.TextBox textBoxAddress;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numericUpDownFaculty;
-        private System.Windows.Forms.ComboBox comboBoxSpecialty;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxSpecialty;
     }
 }

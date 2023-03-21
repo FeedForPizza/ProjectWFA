@@ -11,7 +11,7 @@ namespace ProjectWFA
     public class DBManipulator
     {
         private readonly static string connectionString =
-       "Server=localhost;Database=ISDA;Integrated Security=True";
+       "Server=DESKTOP-C7ALLTO;Database=ISDA;Integrated Security=True";
         private SqlConnection connection;
         private SqlCommand command;
         public DBManipulator()

@@ -54,5 +54,23 @@ namespace ProjectWFA
             FormViewSpecialties formViewSpecialties = new FormViewSpecialties();
             formViewSpecialties.ShowDialog();   
         }
+
+        private void subjectToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormViewSubjects formViewSubjects = new FormViewSubjects();
+            formViewSubjects.ShowDialog();
+        }
+
+        private void studentToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormViewStudents formViewStudents = new FormViewStudents();
+            formViewStudents.ShowDialog();
+        }
+
+        private void gradeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormViewGrades formViewGrades = new FormViewGrades();
+            formViewGrades.ShowDialog();
+        }
     }
 }
