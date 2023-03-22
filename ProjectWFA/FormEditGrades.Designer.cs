@@ -46,6 +46,7 @@
             this.buttonSave.TabIndex = 13;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // numericUpDownGrade
             // 
@@ -56,6 +57,7 @@
             // 
             // comboBoxStudent
             // 
+            this.comboBoxStudent.Enabled = false;
             this.comboBoxStudent.FormattingEnabled = true;
             this.comboBoxStudent.Location = new System.Drawing.Point(90, 57);
             this.comboBoxStudent.Name = "comboBoxStudent";

@@ -161,7 +161,7 @@ lName, string address, string phone, string eMail)
                 connection.Open();
                 SqlCommand command = this.manipulator.GetCommand();
                 command.CommandText = "INSERT INTO StudentSubject (FNumber,SubjectId,FinalGrade) VALUES(@FNumber,@SubjectId,@FinalGrade)";
-            SqlParameter param = null;
+                SqlParameter param = null;
                 param = new SqlParameter("@FNumber", SqlDbType.Int);
                 param.Value = fNumber;
                 command.Parameters.Add(param);
@@ -427,7 +427,7 @@ lName, string address, string phone, string eMail)
                 connection.Close();
             }
         }
-        public void UpdateGrade(int originalId, int subject, int grade)
+        public void UpdateGrade(int fNumber, int subjectId, int finalGrade)
         {
             SqlConnection connection = this.manipulator.GetConnection();
             try
@@ -436,15 +436,20 @@ lName, string address, string phone, string eMail)
                 SqlCommand command = this.manipulator.GetCommand();
                 command.CommandText = "UPDATE StudentSubject SET FinalGrade = @Grade WHERE FNumber = @OriginalId AND SubjectId = @SubjectID";
                 SqlParameter param = null;
-                param = new SqlParameter("@SubjectID", SqlDbType.Int);
-                param.Value = subject;
-                command.Parameters.Add(param);
-                param = new SqlParameter("@Grade", SqlDbType.VarChar);
-                param.Value = grade;
-                command.Parameters.Add(param);
                 param = new SqlParameter("@OriginalId", SqlDbType.Int);
-                param.Value = originalId;
+                param.Value = fNumber;
                 command.Parameters.Add(param);
+
+                param = new SqlParameter("@SubjectID", SqlDbType.Int);
+                param.Value = subjectId;
+                command.Parameters.Add(param);
+
+                param = new SqlParameter("@Grade", SqlDbType.VarChar);
+                param.Value = finalGrade;
+                command.Parameters.Add(param);
+
+
+
                 command.ExecuteNonQuery();
             }
             catch (Exception e)

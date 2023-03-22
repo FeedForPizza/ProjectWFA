@@ -29,6 +29,7 @@ namespace ProjectWFA
             this.comboBoxSubject.DataSource = daTable;
             this.comboBoxSubject.ValueMember = "id";
             this.comboBoxSubject.DisplayMember = "name";
+
             this.id = id;
             this.comboBoxStudent.SelectedValue = id;
             this.comboBoxSubject.SelectedValue = subject;
@@ -39,7 +40,8 @@ namespace ProjectWFA
         {
            Configurator configurator = new Configurator();
            configurator.UpdateGrade(Convert.ToInt32(this.comboBoxStudent.SelectedValue),
-           Convert.ToInt32(this.comboBoxSubject.SelectedValue), (int)this.numericUpDownGrade.Value);
+           Convert.ToInt32(this.comboBoxSubject.SelectedValue),
+           (int)this.numericUpDownGrade.Value);
 
         }
 

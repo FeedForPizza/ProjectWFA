@@ -29,12 +29,9 @@ namespace ProjectWFA
         {
             if (this.dataGridViewGrades.SelectedRows.Count == 1)
             {
-                int id =
-              Convert.ToInt32(this.dataGridViewGrades.SelectedRows[0].Cells[0].Value);
-                string subject =
-               this.dataGridViewGrades.SelectedRows[0].Cells[1].Value.ToString();
-                int grade =
-              Convert.ToInt32(this.dataGridViewGrades.SelectedRows[0].Cells[2].Value);
+                int id = Convert.ToInt32(this.dataGridViewGrades.SelectedRows[0].Cells[0].Value);
+                string subject = this.dataGridViewGrades.SelectedRows[0].Cells[1].Value.ToString();
+                int grade = Convert.ToInt32(this.dataGridViewGrades.SelectedRows[0].Cells[2].Value);
 
                 FormEditGrades formEditSpecialty = new FormEditGrades();
                 formEditSpecialty.Init(id,subject,grade);
